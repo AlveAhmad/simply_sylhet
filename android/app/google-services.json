@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "453128287131",
+    "project_id": "simplysylhet",
+    "storage_bucket": "simplysylhet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:453128287131:android:8b7e91ab7588b00b9f273e",
+        "android_client_info": {
+          "package_name": "com.example.simplysylhet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "453128287131-ikomivvenv3rr054rbkpngtgnjgfb6hf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsEl9gpe1c-X2OSeenKf2zB2FsLqey7Tw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "453128287131-ikomivvenv3rr054rbkpngtgnjgfb6hf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

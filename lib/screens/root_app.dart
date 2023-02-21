@@ -1,10 +1,26 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:simplysylhet/widgets/home_bottom_bar.dart';
+import 'package:simplysylhet/widgets/profile_bottom_bar.dart';
 
-class Profile extends StatelessWidget {
-  const Profile({Key? key}) : super(key: key);
+class Profile extends StatefulWidget {
+  final User user;
+
+  Profile({required this.user});
+
+  @override
+  _ProfileState createState() => _ProfileState();
+}
+
+class _ProfileState extends State<Profile> {
+  late User _currentUser;
+  @override
+  void initState() {
+    _currentUser = widget.user;
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +43,7 @@ class Profile extends StatelessWidget {
         children: [
           // COLUMN THAT WILL CONTAIN THE PROFILE
           Column(
-            children: const [
+            children: [
               CircleAvatar(
                 radius: 80,
                 backgroundImage: AssetImage(
@@ -36,7 +52,7 @@ class Profile extends StatelessWidget {
               ),
               SizedBox(height: 10),
               Text(
-                "Arup Saha",
+                "${_currentUser.displayName} ",
                 style: TextStyle(
                   fontSize: 26,
                   fontWeight: FontWeight.w600,
@@ -45,7 +61,6 @@ class Profile extends StatelessWidget {
               Text("")
             ],
           ),
-          const SizedBox(height: 25),
 
           const SizedBox(height: 10),
           Row(),
@@ -116,7 +131,7 @@ class Profile extends StatelessWidget {
           )
         ],
       ),
-      bottomNavigationBar: HomeBottomBar(),
+      bottomNavigationBar: ProfileBottomBar(),
     );
   }
 }
@@ -161,7 +176,7 @@ List<CustomListTile> customListTiles = [
     icon: CupertinoIcons.bell,
   ),
   CustomListTile(
-    title: "Logout",
-    icon: CupertinoIcons.arrow_right_arrow_left,
+    icon: Icons.lock_outline,
+    title: "Log Out",
   ),
 ];

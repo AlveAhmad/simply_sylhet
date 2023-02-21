@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:simplysylhet/screens/login.dart';
-import 'package:simplysylhet/screens/page2_screen.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(
           image: DecorationImage(
-        image: AssetImage("images/bg2.jpg"),
+        image: AssetImage("images/bg3.png"),
         fit: BoxFit.cover,
         opacity: 0.7,
       )),
@@ -22,9 +22,9 @@ class HomeScreen extends StatelessWidget {
               children: [
                 Text(
                   "Simply",
-                  style: TextStyle(
+                  style: GoogleFonts.zeyada(
                     color: Colors.white,
-                    fontSize: 35,
+                    fontSize: 52,
                     fontWeight: FontWeight.bold,
                     letterSpacing: 1.5,
                   ),
@@ -32,19 +32,20 @@ class HomeScreen extends StatelessWidget {
                 SizedBox(height: 2),
                 Text(
                   "Sylhet!",
-                  style: TextStyle(
-                    color: Colors.white.withOpacity(0.8),
-                    fontSize: 35,
+                  style: GoogleFonts.satisfy(
+                    color: Colors.white.withOpacity(1),
+                    fontSize: 38,
                     fontWeight: FontWeight.w400,
                     letterSpacing: 1.5,
                   ),
                 ),
                 SizedBox(height: 12),
                 Text(
-                  "In publishing and graphic design, Lorem ipsum is a copy is available.",
-                  style: TextStyle(
+                  "Make your dreams come true. Explore, Journey, Discover, Adventure. Making your heart want to return. Don'T Be A Tourist, Be A Traveler.",
+                  style: GoogleFonts.pacifico(
                     color: Colors.white.withOpacity(0.7),
                     fontSize: 16,
+                    fontWeight: FontWeight.w200,
                     letterSpacing: 1.2,
                   ),
                 ),
@@ -54,7 +55,7 @@ class HomeScreen extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => MyLogin(),
+                          builder: (context) => LoginScreen(),
                         ));
                   },
                   child: Ink(
