@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:simplysylhet/screens/agency_details.dart';
 import 'package:simplysylhet/screens/home_screen.dart';
+// import 'package:simplysylhet/screens/page2_screen.dart';
 import 'package:simplysylhet/widgets/home_bottom_bar.dart';
 
 class BookNow extends StatelessWidget {

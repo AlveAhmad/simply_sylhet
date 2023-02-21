@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:simplysylhet/screens/home.dart';
 import 'package:simplysylhet/screens/home_screen.dart';
+// import 'package:simplysylhet/screens/page2_screen.dart';
 import 'package:simplysylhet/screens/post_screen.dart';
 
 class PostAppBar extends StatefulWidget {

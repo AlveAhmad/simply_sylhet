@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:simplysylhet/screens/login.dart';
+// import 'package:simplysylhet/screens/page2_screen.dart';
 
 class HomeScreen2 extends StatelessWidget {
   @override
